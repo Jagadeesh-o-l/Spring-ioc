@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="spring_ioc_setter_injection.Employee" id="emp">
+        <property name="empid" value="1"></property>
+        <property name="empname" value="allen"></property>
+    </bean>
+    
+    <bean class="spring_ioc_constructer_injection.Student" id="s">
+    <constructor-arg index="0" value="1"></constructor-arg>
+    <constructor-arg index="1" value="smith"></constructor-arg>
+    </bean>
+    <bean class="Object_di.Car" id="car"></bean>
+    <bean class="Object_di.JK_tyre" id="jk"></bean>
+    <bean class="Object_di.MRF_tyre" id="mrf"></bean>
+</beans>
